@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music Player</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><form action="/musicplayer/" method="post">
+                <button name="playbtn" type="submit">Play</button>
+            </form>
+        </td>
+        <td>
+            <form action="/musicplayer/" method="post">
+                <button name="pausebtn" type="submit">Pause</button>
+            </form>
+        </td>
+        <td>
+            <form action="/musicplayer/" method="post">
+                <button name="nextbtn" type="submit">Next</button>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <form enctype="multipart/form-data" action="/upload/" method="POST">
+                <p>Upload File:
+                </p>
+                <p> 
+                    <input type="file" name="file">
+                </p>
+                <p>
+                    <input type="submit"  name="btnfile" value="Done">
+                </p>
+            </form>
+        </td>
+    </tr>
+</table>
+<h6>{{ message }}</h6>
+</body>
+</html>
